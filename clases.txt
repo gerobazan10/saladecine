@@ -95,3 +95,18 @@ verLegajo
 
 
 
+Clase Producto
+
+Object subclass: #Producto
+	instanceVariableNames: 'idProducto descripcion precio'
+	classVariableNames: ''
+	package: 'tpFinal'
+
+metodo de clase
+
+crearProducto: unId descripcion:unaDescripcion precio:unPrecio 
+	"crea un producto llama al metodo de instancia iniProducto"
+^(self new) iniProducto:  unId descripcion:unaDescripcion precio:unPrecio
+
+metodos de instancia
+
