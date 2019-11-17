@@ -1,0 +1,97 @@
+clase persona
+Object subclass: #Persona
+	instanceVariableNames: 'dni nombre'
+	classVariableNames: ''
+	package: 'tpFinal'
+
+
+
+
+metodo de clase
+crearPersona: unDni nom:unNombre
+	"llama a ini persona con los argumentos recibidos"
+
+^(self new) iniPersona: unDni nombre:unNombre
+
+metodos de instancia
+
+iniPersona: unDni nombre:unNombre
+"inicializa una persona"
+dni:=unDni.
+nombre:=unNombre 
+
+modiDni: unDni
+"asigna un dni"
+dni:=unDni
+
+modiNombre: unNombre
+	"asigna un nombre"
+
+nombre:=unNombre
+
+verDni
+"devuelve el valor del dni"
+^dni
+
+
+verNombre
+	"devuelve el nombre"
+
+^nombre
+
+
+clase cliente 
+Persona subclass: #Cliente
+	instanceVariableNames: ''
+	classVariableNames: ''
+	package: 'tpFinal'
+
+metodos de clase
+crearCliente: unDni nombre:unNombre 
+	"crea un cliente"
+^(self new) iniCliente: unDni nombre:unNombre 
+
+
+metodo de instancia
+
+iniCliente: unDni nombre:unNombre
+"inicializa un cliente"
+dni:=unDni.
+nombre:=unNombre
+
+
+Empleado
+
+Persona subclass: #Empleado
+	instanceVariableNames: 'legajo'
+	classVariableNames: ''
+	package: 'tpFinal'
+
+metodo de clase
+
+crearEmpleado: unDni nom:unNombre legajo:unLegajo
+	"llama a ini persona con los argumentos recibidos"
+
+^(self new) iniEmpleado: unDni nombre:unNombre legajo:unLegajo
+
+metodo de instancia
+
+iniEmpleado: unDni nombre:unNombre legajo:unLegajo
+"inicializa un empleado"
+dni:=unDni.
+nombre:=unNombre.
+legajo:=unLegajo 
+
+
+modiLegajo:unLegajo
+	"modifica el legajo"
+legajo:=unLegajo 
+
+verLegajo
+
+	"devuleve el legajo"
+
+^legajo
+
+
+
